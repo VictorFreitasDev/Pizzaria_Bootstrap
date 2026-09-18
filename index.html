@@ -6,9 +6,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzou</title>
+    <title>PizzouAi?</title>
 </head>
 <body>
-    
+    <!-- MENU -->
+    <!-- 
+        navbar - barra de navegação do bootstrap
+        navbar-expand-lg - controla a responsividade. a partir de telas lg(large),
+        o menu fica abrto/horizontal. abaixo dele, fica recolhido o botão sanduiche
+        bg-danger - cor de fundo do menu.
+        navbar-dark - cor do texto do menu. como o fundo é escuro, o texto fica claro.
+        shadow - adiciona sombra ao menu.
+    -->
+     <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
+        <div class="container">
+            <!-- 
+             navbar-brand - marca do menu.
+             fw-bold - texto em negrito.
+             fs-4 - tamanho da fonte.
+            -->
+            <a class="navbar-brand fw-bold fs-4" href="#">PizzouAi?</a>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--
+             navbar-nav - lista de itens do menu.
+             ms-auto - alinha os itens do menu à direita.
+             collapse - recolhe o menu em telas menores.
+            -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#pizzas">Pizzas</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contato">Contato</a></li>
+
+                </ul>    
+            </div>
+            
+        </div>
+
+     </nav>
+
+
 </body>
 </html>
