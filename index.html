@@ -50,6 +50,60 @@
 
      </nav>
 
+     <!--
+     bg-light- coloca um fundo claro
+     py-5 - adciona espaçamento interno (padding) em cima e embaixo
+     -->
+     <section class = "bg-light py-5">
+        <!--
+        row - cria uma linha do sistema grid do bootstrap
+        align-items-center - centraliza verticalmente os elementos que serão dentro da linha
+        -->
+        <div class="container">
+            <div class="row align-items-center">
+                <!--
+                col-md-6 - cria uma coluna que ocua 6 das 12 partes do grrid a partir de telas médias (md)
+                grid possui 12 colunas, então 6 = 50%
+                -->
+                <div class="col-md-6">
+                    <!--
+                    Display-4 aplica um tamanho grande de destaque ao texto
+                    fw-bold - deixa o texto em negrito
+                    -->
+                    <h1 class="display-5 fw-bold"> A Melhor pizza da cidade</h1>
 
+                    <p class="lead">
+                        Pizzas artesanais preparadas com ingredientes selecionados
+                        pelo pŕoprio Ratatouille e muito sabor.
+                    </p>
+
+
+                    <a href="#pizzas" class="btn btn-danger btn-lg">
+                        Ver Cardápio
+                    </a>
+                </div>
+
+                <!--
+                col-md-6 - ocupa as outras 6 colunas do Grid
+                text-center - centraliza o conteúdo/texto
+                mt-4 - adiciona margem superior
+                mt-md-0 - a partir de telas md, remove a margem superior
+                Isso é util porque no celular a aimagem ficará abaixo do texto e precisará
+                de um espaço entre eles
+                -->
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <!-- 
+                    img-fluid - torna a imagem responsiva.
+                    A imagem diminui de acordo com o tamanho disponível.
+                    rouded - deixa os cantos da imagem arredondados.
+                    shadow - adiciona uma sombra.
+                    -->
+                    <img src="assets/imgs/pizzasss.png" alt="Imagem de pizza" class="img-fluid rounded shadow">
+                </div>
+
+            </div>
+        </div>
+        
+     </section>
 </body>
 </html>
