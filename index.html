@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="assets/styles/estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzouAi?</title>
 </head>
+
 <body>
     <!-- MENU -->
     <!-- 
@@ -18,7 +23,7 @@
         navbar-dark - cor do texto do menu. como o fundo é escuro, o texto fica claro.
         shadow - adiciona sombra ao menu.
     -->
-     <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
         <div class="container">
             <!-- 
              navbar-brand - marca do menu.
@@ -26,11 +31,12 @@
              fs-4 - tamanho da fonte.
             -->
             <a class="navbar-brand fw-bold fs-4" href="#">PizzouAi?</a>
-        
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!--
              navbar-nav - lista de itens do menu.
              ms-auto - alinha os itens do menu à direita.
@@ -43,18 +49,18 @@
                     <li class="nav-item"><a class="nav-link " href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link " href="#contato">Contato</a></li>
 
-                </ul>    
+                </ul>
             </div>
-            
+
         </div>
 
-     </nav>
+    </nav>
 
-     <!--
+    <!--
      bg-light- coloca um fundo claro
      py-5 - adciona espaçamento interno (padding) em cima e embaixo
      -->
-     <section class = "bg-light py-5">
+    <section class="bg-light py-5">
         <!--
         row - cria uma linha do sistema grid do bootstrap
         align-items-center - centraliza verticalmente os elementos que serão dentro da linha
@@ -103,7 +109,104 @@
 
             </div>
         </div>
-        
-     </section>
+
+    </section>
+    <!-- PIZZAS
+      id ="pizzas" - permite acessar esta seção utilizando href="#pizzas".
+     -->
+    <section id="pizzas" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">
+                Nossas Pizzas
+            </h2>
+
+
+
+            <div class="row g-4">
+                <!-- 
+            Como temos três elementos: 4 + 4 + 4 = 12
+            Portotanto, sem telas md ou maiores teremos
+            três cards lado a lado.
+            Tem telas menores, eles ficarão um abaixo do outro.
+            -->
+                <div class="col-md-4 d-flex">
+                    <!--
+                card - cria um card do Bootstrap.
+                h-100 - faz o card ocupar 100% da altura disponível.
+                Ajuda a deixar todos os cards com a mesma altura
+                shadow-sm - adiciona uma sombra pequena, sm significa small.
+                -->
+                    <div class="card h-100 shadow-sm">
+                        <!--
+                    card-img-top = estiliza a aimagem para aparecer na parte superior do card
+                    -->
+                        <img src="assets/imgs/catalogo/calabresa.png" class="card-img-top rounded"
+                            alt="Imagem da Pizza">
+                        <!-- card-body - cria a área principal do conteúdo do card, aplicando espaçamentos automaticamente-->
+                        <div class="card-body">
+                            <!-- card-title - estiliza o título do card-->
+                            <h5 class="card-title">Calabresa</h5>
+
+                            <p class="card-text">
+                                Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.
+                            </p>
+
+                            <p class="fw-bold text-success fs-5">
+                                R$45,00
+                            </p>
+
+                            <a href="#" class="btn btn-danger">
+                                Pedir Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 d-flex">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/imgs/catalogo/napolitana.png" class="card-img-top rounded"
+                            alt="Imagem da Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Napolitana</h5>
+                            <p class="card-text">
+                                Molho de tomate, mussarela, tomate, parmesão, alho e orégano.
+                            </p>
+                            <p class="fw-bold text-success fs-5">
+                                R$45,00
+                            </p>
+                            <a href="#" class="btn btn-danger">
+                                Pedir Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/imgs/catalogo/frango_catupiry.png" class="card-img-top rounded"
+                            alt="Imagem da Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Frango com Catupiry</h5>
+                            <p class="card-text">
+                                Molho de tomate, frango desfiado, mussarela e Catupiry bem visível.
+                            </p>
+                            <p class="fw-bold text-success fs-5">
+                                R$45,00
+                            </p>
+                            <a href="#" class="btn btn-danger">
+                                Pedir Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
 </body>
+
 </html>
